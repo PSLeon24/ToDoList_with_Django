@@ -59,3 +59,16 @@
   </pre>
 - html 파일을 사용자에게 보여 주려면 render() 함수를 사용
 - render() 함수에서 request 전달하는 이유: request가 user나 session과 같은 중요한 값들을 전달하기 때문
+### 7. 모델(models.py) 다루기
+1) models.py에 모델(≈DB에서의 테이블) 만들기
+2) 모델(≈테이블)의 형태 정의하기
+  <pre>
+  from django.db import models
+    
+  # Create your models here.
+  class Todo(models.Model):
+      content = models.CharField(max_length = 255)
+  </pre>
+3) <code>python manage.py makemigrations</code>
+- <img width="389" alt="스크린샷 2023-12-27 오후 5 13 28" src="https://github.com/PSLeon24/ToDoList_with_Django/assets/59058869/a00a7b0b-23c5-4160-9ae4-3f27abbd9923">
+
