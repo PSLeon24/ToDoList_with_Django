@@ -4,3 +4,5 @@ __pycache__
 */bin/*
 */lib/*
 pyvenv.cfg
+ToDoList/.DS_Store
+.DS_Store
