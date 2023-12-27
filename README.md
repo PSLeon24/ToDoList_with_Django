@@ -18,3 +18,6 @@
 - 프로젝트 경로(manage.py가 있는 위치)에서 위 명령어를 실행해야 함
 - 프로젝트 경로 내부에 프로젝트명과 동일한 경로(e.g. ToDoList/ToDolist/)의 settings.py 파일의 INSTALLED_APPS 부분에 새로 생성한 앱을 추가
 - <code>INSTALLED_APPS = ['my_to_do_app']</code>
+### 3. 프로젝트 실행
+<code>python manage.py runserver</code>
+- Access the site: http://127.0.0.1:8000/
