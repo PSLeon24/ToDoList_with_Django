@@ -70,5 +70,7 @@
       content = models.CharField(max_length = 255)
   </pre>
 3) <code>python manage.py makemigrations</code>
-- <img width="389" alt="스크린샷 2023-12-27 오후 5 13 28" src="https://github.com/PSLeon24/ToDoList_with_Django/assets/59058869/a00a7b0b-23c5-4160-9ae4-3f27abbd9923">
+4) <code>python manage.py migrate</code>
+- 3)에서는 mirgration이라는 초안을 만들고 4)를 통해 실제 테이블 생성
+- <img width="519" alt="스크린샷 2023-12-27 오후 5 18 24" src="https://github.com/PSLeon24/ToDoList_with_Django/assets/59058869/aa468e5b-1b3c-4b71-81a0-09774ca501a5">
 - 모델의 데이터 형태에 대해 학습할 때 참고할 만한 자료: https://github.com/dkyou7/TIL/blob/master/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Django/5.%20%5BDjango%5D%20Model%20%ED%95%84%EB%93%9C%ED%83%80%EC%9E%85%20%EC%A0%95%EB%A6%AC.md
