@@ -44,3 +44,18 @@
   def index(request):
       return HttpResponse("my_to_do_app first page.")
   </pre>
+### 6. HTML 템플릿 사용
+- 저자 GitHub의 index.html 파일 코드 복사
+  - https://github.com/doorBW/ToDoList-with-Django/blob/master/ToDoList/my_to_do_app/templates/my_to_do_app/index.html
+1) my_to_do_app 앱 경로에 templates 디렉터리를 생성
+2) templates 안에 앱과 이름이 동일한 my_to_do_app 디렉터리 생성
+3) my_to_do_app/templates/my_to_do_app에 index.html을 만들어 위에서 복사한 코드 붙여넣기
+4) views.py의 index() 함수를 다음과 같이 수정
+  <pre>
+  from django.shortcuts import render
+  
+  def index(request):
+      return render(request, "my_to_do_app/index.html")
+  </pre>
+- html 파일을 사용자에게 보여 주려면 render() 함수를 사용
+- render() 함수에서 request 전달하는 이유: request가 user나 session과 같은 중요한 값들을 전달하기 때문
