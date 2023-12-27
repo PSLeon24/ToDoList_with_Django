@@ -34,3 +34,13 @@
     path("", views.index),
   ]
   </pre>
+### 5. views.py 파일 수정
+- 아래와 같이 views.py 파일에 index() 함수의 요청이 왔을 경우 "my_to_do_app first page."를 반환하는 index() 함수 만들기
+  <pre>
+  from django.shortcuts import render
+  from django.http import HttpResponse # HttpResponse: 인자로 받은 문자열을 User에게 보여 주도록 하는 함수
+  
+  # Create your views here.
+  def index(request):
+      return HttpResponse("my_to_do_app first page.")
+  </pre>
