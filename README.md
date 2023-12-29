@@ -1,5 +1,6 @@
 # ToDoList_with_Django
 장고를 활용한 ToDoList 페이지 제작 (백엔드 학습)
+- 2023/12/27(수) ~ 2023/12/29(금) 학습 완료
 
 ## Development Environment
 - Apple Mac M1
