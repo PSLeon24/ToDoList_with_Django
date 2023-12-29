@@ -25,5 +25,6 @@ def createTodo(request):
 def doneTodo(request):
     done_todo_id = request.GET["todoNum"]
     todo = Todo.objects.get(id=done_todo_id)
-    todo.delete()
+    todo.isDone = True
+    todo.save()
     return HttpResponseRedirect(reverse("index"))
